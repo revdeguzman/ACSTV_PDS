@@ -36,7 +36,6 @@ public class TC001 extends BaseFiles {
 		//Wait if Buttons appear
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"idformgrid\"]/div[1]/a/div/button")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"idformgrid\"]/div[1]/div[1]/button")));
-		System.out.println("Buttons are displayed.");
 		
 		//Create New User
 		driver.findElement(By.xpath("//*[@id=\"idformgrid\"]/div[1]/a/div/button")).click();
@@ -44,8 +43,6 @@ public class TC001 extends BaseFiles {
 		//Validate Module
 		String description = driver.findElement(By.xpath("//*[@id=\"neo-contentbox-maincolumn\"]/div/form/table/tbody/tr[2]/td/fieldset[1]/legend/b")).getText();
 		Assert.assertEquals(description, "Main Fields");
-		
-		System.out.println("Module Header is: " + description);
 		
 		//Login Field
 		driver.findElement(By.name("name")).sendKeys(tc001.getProperty("username"));
@@ -147,7 +144,6 @@ public class TC001 extends BaseFiles {
 		//Wait if Buttons appear
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"idformgrid\"]/div[1]/a/div/button")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"idformgrid\"]/div[1]/div[1]/button")));
-		System.out.println("Buttons are displayed.");
 		
 		//Screenshot
 		screenshot.FullPageScreenShot(folderPath);
