@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PDS_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test_case.TC001">
+        <methods>
+          <include name="Logout"/>
+          <include name="closeBrowser"/>
+          <include name="AddUser"/>
+          <include name="startBrowser"/>
+          <include name="reloginUser"/>
+        </methods>
+      </class> <!-- test_case.TC001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [PDS_Suite] -->
