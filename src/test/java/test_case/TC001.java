@@ -153,6 +153,5 @@ public class TC001 extends BaseFiles {
 		screenshot.FullPageScreenShot(folderPath);
 		
 	}
-	
-	
+		
 }
