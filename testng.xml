@@ -5,6 +5,8 @@
 		<classes>
 	    	<class name="base.BaseFiles"/>
 	    	<class name="test_case.EditUser"/>
+	    	<!-- <class name="test_case.AddUser"/> Remove comment depends on the class to be execute
+	    	<class name="test_case.ChangePassword"/> -->
     	</classes>
     </test> <!-- PDS_Execution -->
 </suite> <!-- PDS_Suite -->
