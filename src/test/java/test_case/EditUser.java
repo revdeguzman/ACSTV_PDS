@@ -17,7 +17,7 @@ public class EditUser extends BaseFiles {
 	Screenshot screenshot = new Screenshot();
 	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots";
 	
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void EditDetails () throws InterruptedException, IOException {
 	
 	//Click User Module
@@ -103,7 +103,7 @@ public class EditUser extends BaseFiles {
 		
 	}
 			
-//	@Test(priority = 2, dependsOnMethods = "EditDetails")
+	@Test(priority = 2, dependsOnMethods = "EditDetails")
 	public void Logout() {
 
 	//Logout Button
@@ -114,7 +114,7 @@ public class EditUser extends BaseFiles {
 	
 	}
 		
-//	@Test(priority = 3, dependsOnMethods = "Logout")
+	@Test(priority = 3, dependsOnMethods = "Logout")
 	public void reloginUser() throws InterruptedException, IOException {
 			
 	//Username Field

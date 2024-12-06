@@ -17,7 +17,7 @@ public class ChangePassword extends BaseFiles {
 	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots";
 	
 	@Test(priority = 1)
-	public void changePass() {
+	public void changePass() throws InterruptedException, IOException {
 		
 		//Click Profile
 		driver.findElement(By.className("dropdown-toggle")).click();
@@ -34,6 +34,9 @@ public class ChangePassword extends BaseFiles {
 		driver.findElement(By.name("curr_pass")).sendKeys(ChangePass.getProperty("current_pass"));
 		driver.findElement(By.name("curr_pass_new")).sendKeys(ChangePass.getProperty("new_pass"));
 		driver.findElement(By.name("curr_pass_renew")).sendKeys(ChangePass.getProperty("retype_pass"));
+		
+		//Take screenshot
+		screenshot.FullPageScreenShot(folderPath);
 		
 		//Click Change
 		driver.findElement(By.name("sendChanPss")).click();
@@ -72,9 +75,6 @@ public class ChangePassword extends BaseFiles {
 
 		//Submit Button
 		driver.findElement(By.name("submit_login")).click();
-
-		//Click User Module
-		driver.findElement(By.xpath("//*[@id=\"main-menu\"]/li[2]/ul/li[3]/a")).click();
 
 		//Wait for Elements
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));

@@ -6,6 +6,7 @@
       <class name="base.BaseFiles">
         <methods>
           <include name="closeBrowser"/>
+          <include name="startBrowser"/>
         </methods>
       </class> <!-- base.BaseFiles -->
       <class name="test_case.ChangePassword">

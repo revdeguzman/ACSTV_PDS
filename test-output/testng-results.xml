@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T10:31:23 PST" name="PDS_Suite" finished-at="2024-12-06T10:31:40 PST" duration-ms="16850">
+  <suite started-at="2024-12-06T11:01:02 PST" name="PDS_Suite" finished-at="2024-12-06T11:01:30 PST" duration-ms="28185">
     <groups>
     </groups>
-    <test started-at="2024-12-06T10:31:23 PST" name="Test" finished-at="2024-12-06T10:31:40 PST" duration-ms="16850">
+    <test started-at="2024-12-06T11:01:02 PST" name="Test" finished-at="2024-12-06T11:01:30 PST" duration-ms="28185">
       <class name="base.BaseFiles">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-06T10:31:23 PST" name="startBrowser" finished-at="2024-12-06T10:31:30 PST" duration-ms="7103" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-06T11:01:02 PST" name="startBrowser" finished-at="2024-12-06T11:01:12 PST" duration-ms="10230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-06T10:31:39 PST" name="closeBrowser" finished-at="2024-12-06T10:31:40 PST" duration-ms="786" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-06T11:01:30 PST" name="closeBrowser" finished-at="2024-12-06T11:01:30 PST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- base.BaseFiles -->
       <class name="test_case.ChangePassword">
-        <test-method signature="changePass()[pri:1, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T10:31:30 PST" name="changePass" finished-at="2024-12-06T10:31:32 PST" duration-ms="1643" status="PASS">
+        <test-method signature="changePass()[pri:1, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T11:01:12 PST" name="changePass" finished-at="2024-12-06T11:01:19 PST" duration-ms="6779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changePass -->
-        <test-method signature="Logout()[pri:2, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T10:31:32 PST" name="Logout" finished-at="2024-12-06T10:31:33 PST" depends-on-methods="test_case.ChangePassword.changePass" duration-ms="1177" status="PASS">
+        <test-method signature="Logout()[pri:2, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T11:01:19 PST" name="Logout" finished-at="2024-12-06T11:01:21 PST" depends-on-methods="test_case.ChangePassword.changePass" duration-ms="2260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method signature="reloginUser()[pri:3, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T10:31:33 PST" name="reloginUser" finished-at="2024-12-06T10:31:39 PST" depends-on-methods="test_case.ChangePassword.Logout" duration-ms="6065" status="PASS">
+        <test-method signature="reloginUser()[pri:3, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T11:01:21 PST" name="reloginUser" finished-at="2024-12-06T11:01:30 PST" depends-on-methods="test_case.ChangePassword.Logout" duration-ms="8239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reloginUser -->
