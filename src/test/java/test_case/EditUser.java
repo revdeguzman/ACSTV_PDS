@@ -15,7 +15,7 @@ public class EditUser extends BaseFiles {
 	
 	//Add Screenshot
 	Screenshot screenshot = new Screenshot();
-	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots";
+	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots\\Edit User\\";
 	
 	@Test(priority = 1)
 	public void EditDetails () throws InterruptedException, IOException {
@@ -58,7 +58,7 @@ public class EditUser extends BaseFiles {
 	          break;
         }
     }
-    
+
     //Validate if Password is not empty
 	WebElement password = driver.findElement(By.name("password1"));
 	

@@ -16,7 +16,7 @@ public class AddUser extends BaseFiles {
 	
 	//Add Screenshot
 	Screenshot screenshot = new Screenshot();
-	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots";
+	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots\\Add User\\";
 
 	@Test(priority = 1)
 	public void CreateUser() throws InterruptedException, IOException {

@@ -9,15 +9,15 @@
           <include name="startBrowser"/>
         </methods>
       </class> <!-- base.BaseFiles -->
-      <class name="test_case.ChangePassword">
+      <class name="test_case.EditUser">
         <methods>
-          <include name="changePass"/>
-          <include name="closeBrowser"/>
-          <include name="startBrowser"/>
           <include name="Logout"/>
           <include name="reloginUser"/>
+          <include name="closeBrowser"/>
+          <include name="EditDetails"/>
+          <include name="startBrowser"/>
         </methods>
-      </class> <!-- test_case.ChangePassword -->
+      </class> <!-- test_case.EditUser -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [PDS_Suite] -->

@@ -16,9 +16,6 @@ public class Screenshot extends BaseFiles {
 		LocalDateTime myDateObj = LocalDateTime.now();
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MMM-yyyy hh.mm.ss a");
         String formattedDate = myDateObj.format(myFormatObj);
-        
-        //Delay to load the screen
-        Thread.sleep(5000);
 
         //Full Page Screenshot setup
         AShot aShot = new AShot();

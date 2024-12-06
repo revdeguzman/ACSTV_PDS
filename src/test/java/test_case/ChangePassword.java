@@ -14,7 +14,7 @@ public class ChangePassword extends BaseFiles {
 	
 	//Add Screenshot
 	Screenshot screenshot = new Screenshot();
-	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots";
+	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots\\Change Password\\";
 	
 	@Test(priority = 1)
 	public void changePass() throws InterruptedException, IOException {
