@@ -19,7 +19,9 @@ public class BaseFiles {
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static Properties login = new Properties();
-	public static Properties tc001 = new Properties();
+	public static Properties AddUser = new Properties();
+	public static Properties EditUser = new Properties();
+	public static Properties ChangePass = new Properties();
 	
 	@BeforeTest
 	public void startBrowser() throws IOException, InterruptedException {
@@ -29,13 +31,17 @@ public class BaseFiles {
 			//Create new object that locate properties file
 			FileReader file1 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\config.properties");
 			FileReader file2 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\credentials.properties");
-			FileReader file3 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\TC001.properties");
+			FileReader file3 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\AddUser.properties");
+			FileReader file4 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\EditUser.properties");
+			FileReader file5 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config\\changepass.properties");
 			
 			//Read Files
 			prop.load(file1);
 			login.load(file2);
-			tc001.load(file3);
-						
+			AddUser.load(file3);
+			EditUser.load(file4);
+			ChangePass.load(file5);
+
 			//Set up Chrome Driver
 			WebDriverManager.chromedriver().setup();
 			

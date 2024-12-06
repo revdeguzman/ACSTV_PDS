@@ -30,4 +30,5 @@ public class Screenshot extends BaseFiles {
         System.out.println("Screenshot saved as: " + screenshotFile.getAbsolutePath());
         
     }
+	
 }

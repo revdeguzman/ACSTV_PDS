@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 import base.BaseFiles;
 import base.Screenshot;
 
-public class TC001 extends BaseFiles {
+public class AddUser extends BaseFiles {
 	
 	//Add Screenshot
 	Screenshot screenshot = new Screenshot();
 	String folderPath = System.getProperty("user.dir") + "\\src\\test\\screenshots";
 
-	@Test(priority = 1)
-	public void AddUser() throws InterruptedException, IOException {
+//	@Test(priority = 1)
+	public void CreateUser() throws InterruptedException, IOException {
 		
 		//Click User Module
 		driver.findElement(By.xpath("//*[@id=\"main-menu\"]/li[2]/ul/li[3]/a")).click();
@@ -45,13 +45,13 @@ public class TC001 extends BaseFiles {
 		Assert.assertEquals(description, "Main Fields");
 		
 		//Login Field
-		driver.findElement(By.name("name")).sendKeys(tc001.getProperty("username"));
+		driver.findElement(By.name("name")).sendKeys(AddUser.getProperty("username"));
 		
 		//Password Field
-		driver.findElement(By.name("password1")).sendKeys(tc001.getProperty("password1"));
+		driver.findElement(By.name("password1")).sendKeys(AddUser.getProperty("password1"));
 		
 		//Retype Password Field
-		driver.findElement(By.name("password2")).sendKeys(tc001.getProperty("password2"));
+		driver.findElement(By.name("password2")).sendKeys(AddUser.getProperty("password2"));
 		
 		//Expiration Date Field
 		WebElement expDate = driver.findElement(By.name("expiration"));
@@ -60,11 +60,11 @@ public class TC001 extends BaseFiles {
 		
 		if (!expDateValue.isEmpty()) {
 			expDate.clear();
-			expDate.sendKeys(tc001.getProperty("expiration"));
+			expDate.sendKeys(AddUser.getProperty("expiration"));
 		} else {
 			System.out.println("Field is already empty.");
 		}
-			
+		
 		//Group Field
 		WebElement dropdownElement = driver.findElement(By.id("group"));
 		
@@ -72,10 +72,10 @@ public class TC001 extends BaseFiles {
 		Select GroupDropdown = new Select(dropdownElement);
 		
 		//Select Value from dropdown
-		GroupDropdown.selectByVisibleText(tc001.getProperty("group"));
+		GroupDropdown.selectByVisibleText(AddUser.getProperty("group"));
 		
 		//Name Field
-		driver.findElement(By.name("description")).sendKeys(tc001.getProperty("name"));
+		driver.findElement(By.name("description")).sendKeys(AddUser.getProperty("name"));
 		
 		//Extension Field
 		WebElement extensionDropdown = driver.findElement(By.name("extension"));
@@ -84,16 +84,16 @@ public class TC001 extends BaseFiles {
 		Select ExtensionField = new Select(extensionDropdown);
 		
 		//Select Value from Dropdown
-		ExtensionField.selectByVisibleText(tc001.getProperty("extension"));
+		ExtensionField.selectByVisibleText(AddUser.getProperty("extension"));
 		
 		//Webmail User Field
-		driver.findElement(By.name("webmailuser")).sendKeys(tc001.getProperty("webmail_user"));
+		driver.findElement(By.name("webmailuser")).sendKeys(AddUser.getProperty("webmail_user"));
 		
 		//Webmail Password Field
-		driver.findElement(By.name("webmailpassword1")).sendKeys(tc001.getProperty("webmail_password"));
+		driver.findElement(By.name("webmailpassword1")).sendKeys(AddUser.getProperty("webmail_password"));
 		
 		//Webmain Domain Field
-		driver.findElement(By.name("webmaildomain")).sendKeys(tc001.getProperty("webmail_domain"));
+		driver.findElement(By.name("webmaildomain")).sendKeys(AddUser.getProperty("webmail_domain"));
 		
 		//Screenshot
 		screenshot.FullPageScreenShot(folderPath);
@@ -106,7 +106,7 @@ public class TC001 extends BaseFiles {
 		
 	}
 	
-	@Test(priority = 2, dependsOnMethods = "AddUser")
+//	@Test(priority = 2, dependsOnMethods = "CreateUser")
 	public void Logout() {
 		
 		//Logout Button
@@ -117,14 +117,14 @@ public class TC001 extends BaseFiles {
 		
 	}
 	
-	@Test(priority = 3, dependsOnMethods = "Logout")
+//	@Test(priority = 3, dependsOnMethods = "Logout")
 	public void reloginUser() throws InterruptedException, IOException {
 		
 		//Username Field
-		driver.findElement(By.name("input_user")).sendKeys(tc001.getProperty("username"));
+		driver.findElement(By.name("input_user")).sendKeys(AddUser.getProperty("username"));
 		
 		//Password Field
-		driver.findElement(By.name("input_pass")).sendKeys(tc001.getProperty("password1"));
+		driver.findElement(By.name("input_pass")).sendKeys(AddUser.getProperty("password1"));
 		
 		//Submit Button
 		driver.findElement(By.name("submit_login")).click();

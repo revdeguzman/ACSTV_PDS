@@ -4,7 +4,7 @@
 	<test name="Test">
 		<classes>
 	    	<class name="base.BaseFiles"/>
-	    	<class name="test_case.TC001"/>
+	    	<class name="test_case.ChangePassword"/>
     	</classes>
     </test> <!-- PDS_Execution -->
 </suite> <!-- PDS_Suite -->

@@ -3,15 +3,20 @@
 <suite name="Failed suite [PDS_Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test_case.TC001">
+      <class name="base.BaseFiles">
         <methods>
-          <include name="Logout"/>
           <include name="closeBrowser"/>
-          <include name="AddUser"/>
+        </methods>
+      </class> <!-- base.BaseFiles -->
+      <class name="test_case.ChangePassword">
+        <methods>
+          <include name="changePass"/>
+          <include name="closeBrowser"/>
           <include name="startBrowser"/>
+          <include name="Logout"/>
           <include name="reloginUser"/>
         </methods>
-      </class> <!-- test_case.TC001 -->
+      </class> <!-- test_case.ChangePassword -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [PDS_Suite] -->

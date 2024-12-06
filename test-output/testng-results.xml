@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-03T09:20:45 PST" name="PDS_Suite" finished-at="2024-12-03T09:21:22 PST" duration-ms="36711">
+  <suite started-at="2024-12-06T10:31:23 PST" name="PDS_Suite" finished-at="2024-12-06T10:31:40 PST" duration-ms="16850">
     <groups>
     </groups>
-    <test started-at="2024-12-03T09:20:45 PST" name="Test" finished-at="2024-12-03T09:21:22 PST" duration-ms="36711">
-      <class name="test_case.TC001">
-        <test-method signature="AddUser()[pri:1, instance:test_case.TC001@6fa51cd4]" started-at="2024-12-03T09:20:53 PST" name="AddUser" finished-at="2024-12-03T09:21:12 PST" duration-ms="18891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddUser -->
-        <test-method signature="Logout()[pri:2, instance:test_case.TC001@6fa51cd4]" started-at="2024-12-03T09:21:12 PST" name="Logout" finished-at="2024-12-03T09:21:13 PST" depends-on-methods="test_case.TC001.AddUser" duration-ms="757" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method signature="reloginUser()[pri:3, instance:test_case.TC001@6fa51cd4]" started-at="2024-12-03T09:21:13 PST" name="reloginUser" finished-at="2024-12-03T09:21:21 PST" depends-on-methods="test_case.TC001.Logout" duration-ms="8082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reloginUser -->
-      </class> <!-- test_case.TC001 -->
+    <test started-at="2024-12-06T10:31:23 PST" name="Test" finished-at="2024-12-06T10:31:40 PST" duration-ms="16850">
       <class name="base.BaseFiles">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-03T09:20:45 PST" name="startBrowser" finished-at="2024-12-03T09:20:53 PST" duration-ms="7727" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-06T10:31:23 PST" name="startBrowser" finished-at="2024-12-06T10:31:30 PST" duration-ms="7103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-03T09:21:21 PST" name="closeBrowser" finished-at="2024-12-03T09:21:22 PST" duration-ms="1142" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:base.BaseFiles@5f049ea1]" started-at="2024-12-06T10:31:39 PST" name="closeBrowser" finished-at="2024-12-06T10:31:40 PST" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- base.BaseFiles -->
+      <class name="test_case.ChangePassword">
+        <test-method signature="changePass()[pri:1, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T10:31:30 PST" name="changePass" finished-at="2024-12-06T10:31:32 PST" duration-ms="1643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePass -->
+        <test-method signature="Logout()[pri:2, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T10:31:32 PST" name="Logout" finished-at="2024-12-06T10:31:33 PST" depends-on-methods="test_case.ChangePassword.changePass" duration-ms="1177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="reloginUser()[pri:3, instance:test_case.ChangePassword@6fa51cd4]" started-at="2024-12-06T10:31:33 PST" name="reloginUser" finished-at="2024-12-06T10:31:39 PST" depends-on-methods="test_case.ChangePassword.Logout" duration-ms="6065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reloginUser -->
+      </class> <!-- test_case.ChangePassword -->
     </test> <!-- Test -->
   </suite> <!-- PDS_Suite -->
 </testng-results>
